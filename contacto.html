@@ -25,7 +25,7 @@
                 <li class="nav-item active"> <a href="./about.html" class="nav-link"> Nosotros </a></li>
                 <li class="nav-item"> <a href="#" class="nav-link"> Precios</a></li>
                 <li class="nav-item"> <a href="#" class="nav-link"> Términos y condiciones</a></li>
-                <li class="nav-item"> <a href="./contacto.html" class="nav-link"> Contacto </a></li>
+                <li class="nav-item"> <a href="#" class="nav-link"> Contacto </a></li>
             </ul>
         </div>
     </nav>
@@ -39,16 +39,58 @@
                 <li class="breadcrumb-item active">
                     <a href="./index.html">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
         </nav>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt pariatur ipsam ex 
-            quasi perferendis ipsum minima. Aut, hic asperiores vel nesciunt facere a distinctio
-            nihil. Eligendi quibusdam et vel vero. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptate ex amet dolor repellat iure debitis eligendi accusamus
-            repellendus reiciendis perspiciatis? Excepturi saepe maxime necessitatibus impedit!
-            Possimus a tempore nam nostrum!
-        </span>
+
+        <h1>Dejame tu comentario</h1>
+        
+        <form action="post">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese nombre">
+                </div>
+                 <div class="form-group col-sm-6">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Ingrese apellido">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese correo">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="address">Dirección</label>
+                    <input type="text" class="form-control" id="address" placeholder="Ingrese dirección">
+                </div>
+                 <div class="form-group col-sm-3">
+                    <label for="province">Provincia</label>
+                    <select class="form-control" id="province" >
+                        <option value="medellin">Medellín</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="cali">Cali</option>
+                        <option value="pasto">Pasto</option>
+                        <option value="amazonas">Amazonas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comentario</label>
+                <textarea name="comment" id="comment" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="contact">
+                    <label class="form-check-label" for="contact">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
     </div>
 
     <footer>
