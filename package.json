@@ -4,8 +4,12 @@
   "description": "Primer proyecto de Nodejs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    	"dev": "lite-server",
+	"test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Duvan Mejia",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
