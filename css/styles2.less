@@ -1,0 +1,33 @@
+@blue: rgb(0, 174, 255);
+@black: rgb(17, 17, 17);
+@blackligth: rgb(17, 17, 17);
+@aliceblue: aliceblue;
+
+.margenes(@top: 0px, @bottom: 0px) {
+    margin-top: @top;
+    margin-bottom: @bottom;;
+}
+
+
+.jumbotron {
+    background-color: @blue;
+    color: @black;
+    .margenes(50px, 0);
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: @blackligth;
+    .margenes(10, 0);
+    color: @aliceblue;
+}
+
+.card-hotel {
+    flex: 1 200px;
+    padding: 2px 0px 2px 0px;
+    .margenes(10, 0);
+}
+
+.btn-reserva {
+    width: 100%;
+}
