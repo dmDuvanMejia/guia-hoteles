@@ -13,103 +13,153 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a href="#" class="navbar-brand">Hoteles</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <a href="./index.html" class="nav-link"> Home </a></li>
-                <li class="nav-item"> <a href="./about.html" class="nav-link"> Nosotros </a></li>
-                <li class="nav-item active"> <a href="#" class="nav-link"> Precios</a></li>
-                <li class="nav-item"> <a href="#" class="nav-link"> Términos y condiciones</a></li>
-                <li class="nav-item"> <a href="./contacto.html" class="nav-link"> Contacto </a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="jumbotron">
-        <h1 class="display-4 d-flex justify-content-center font-weight-bold">Hoteles</h1>
-    </div>
-
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
-            </ol>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-brand">Hoteles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a href="./index.html" class="nav-link"> Home </a></li>
+                    <li class="nav-item"> <a href="./about.html" class="nav-link"> Nosotros </a></li>
+                    <li class="nav-item active"> <a href="#" class="nav-link"> Precios</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> Términos y condiciones</a></li>
+                    <li class="nav-item"> <a href="./contacto.html" class="nav-link"> Contacto </a></li>
+                </ul>
+            </div>
         </nav>
-
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="thead-dark"> 
-                    <th>Calidad</th>
-                    <th>Pinamar</th>
-                    <th>Amazonía</th>
-                    <th>Santa Marta</th>
-                    <th>San Andres</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="oi oi-star" title="star"></span></td>
-                        <td>$ 100000</td>
-                        <td>$ 150000</td>
-                        <td>$ 250000</td>
-                        <td>$ 300000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                        </td>
-                        <td>$ 300000</td>
-                        <td>$ 250000</td>
-                        <td>$ 220000</td>
-                        <td>$ 260000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                        </td>
-                        <td>$ 600000</td>
-                        <td>$ 280000</td>
-                        <td>$ 285300</td>
-                        <td>$ 100000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                        </td>
-                        <td>$ 600000</td>
-                        <td>$ 280000</td>
-                        <td>$ 285300</td>
-                        <td>$ 100000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                            <span class="oi oi-star" title="star"></span>
-                        </td>
-                        <td>$ 600000</td>
-                        <td>$ 280000</td>
-                        <td>$ 285300</td>
-                        <td>$ 100000</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="jumbotron">
+            <h1 class="display-4 d-flex justify-content-center font-weight-bold">Hoteles</h1>
         </div>
-        
+
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Precios</li>
+                </ol>
+            </nav>
+
+
+            <ul id="myTab" class="nav nav-tabs mb-2" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a id="compare-tab" class="nav-link active" href="#compare" data-toggle="tab" role="tab"
+                        aria-controls="compare" aria-selected="true">Compara</a>
+                </li>
+                <li class="nav-item">
+                    <a id="card-tab" class="nav-link" href="#card" data-toggle="tab" role="tab" aria-controls="card"
+                        aria-selected="false">Tarjetas</a>
+                </li>
+                <li class="nav-item">
+                    <a id="comment-tab" class="nav-link" href="#comment" data-toggle="tab" role="tab"
+                        aria-controls="comment" aria-selected="false">Comentarios</a>
+                </li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade show active" id="compare" role="tabpanel" aria-labelledby="compare-tab">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <th>Calidad</th>
+                                <th>Pinamar</th>
+                                <th>Amazonía</th>
+                                <th>Santa Marta</th>
+                                <th>San Andres</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="oi oi-star" title="star"></span></td>
+                                    <td>$ 100000</td>
+                                    <td>$ 150000</td>
+                                    <td>$ 250000</td>
+                                    <td>$ 300000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                    </td>
+                                    <td>$ 300000</td>
+                                    <td>$ 250000</td>
+                                    <td>$ 220000</td>
+                                    <td>$ 260000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                    </td>
+                                    <td>$ 600000</td>
+                                    <td>$ 280000</td>
+                                    <td>$ 285300</td>
+                                    <td>$ 100000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                    </td>
+                                    <td>$ 600000</td>
+                                    <td>$ 280000</td>
+                                    <td>$ 285300</td>
+                                    <td>$ 100000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                        <span class="oi oi-star" title="star"></span>
+                                    </td>
+                                    <td>$ 600000</td>
+                                    <td>$ 280000</td>
+                                    <td>$ 285300</td>
+                                    <td>$ 100000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="card" role="tabpanel" aria-labelledby="card-tab">
+                    <div class="d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-header font-weight-bold" style="background-color: rgb(75, 116, 250);">
+                                Tarjetas aceptadas
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Morbi leo risus</li>
+                                    <li class="list-group-item">Porta ac consectetur ac</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+                    Comentarios
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
     </div>
 
     <footer>
@@ -120,10 +170,11 @@
                 <a href="https://www.instagram.com">Instagram</a>
                 <a href="https://www.google.com">Google+</a>
             </div>
-             <div class="col-sm-4">
+            <div class="col-sm-4">
                 <address class="text-center">
                     <h3>Oficina central</h3>
-                    <p> <span class="oi oi-home" title="home" aria-hidden="true"></span> Medellin 777, Bogotá, Colombia</p>
+                    <p> <span class="oi oi-home" title="home" aria-hidden="true"></span> Medellin 777, Bogotá, Colombia
+                    </p>
                     <p> <span class="oi oi-phone" title="iphone" aria-hidden="true"></span> +57 123 456 78 90 </p>
                     <p> <span class="oi oi-inbox" title="inbox" aria-hidden="true"></span> contacto@guiahoteles.com </p>
                 </address>
@@ -144,8 +195,3 @@
 </body>
 
 </html>
-
-
-
-
-
