@@ -142,7 +142,7 @@
                     <span class="badge badge-secondary">Temporada baja </span>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservationModal"
+                    <button class="btn btn-primary btn-reserva btn-reservation" data-toggle="modal" data-target="#reservationModal"
                         type="submit">Reservar</button>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                     <span class="badge badge-secondary">Temporada baja </span>
                     <span class="badge badge-success">Promociones</span>
                 </div>
-                <div> <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservationModal"
+                <div> <button class="btn btn-primary btn-reserva btn-reservation" data-toggle="modal" data-target="#reservationModal"
                         type="submit">Reservar</button> </div>
             </div>
 
@@ -170,7 +170,7 @@
                     <span class="badge badge-primary">Temporada alta</span>
                     <span class="badge badge-secondary">Temporada baja </span>
                 </div>
-                <div> <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservationModal"
+                <div> <button class="btn btn-primary btn-reserva btn-reservation" data-toggle="modal" data-target="#reservationModal"
                         type="submit">Reservar</button> </div>
             </div>
 
@@ -184,7 +184,7 @@
                     <span class="badge badge-primary">Temporada alta</span>
                     <span class="badge badge-secondary">Temporada baja </span>
                 </div>
-                <div> <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservationModal"
+                <div> <button class="btn btn-primary btn-reserva btn-reservation" data-toggle="modal" data-target="#reservationModal"
                         type="submit">Reservar</button> </div>
             </div>
 
@@ -197,7 +197,7 @@
                     <span class="badge badge-primary">Temporada alta</span>
                     <span class="badge badge-secondary">Temporada baja </span>
                 </div>
-                <div> <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservationModal"
+                <div> <button class="btn btn-primary btn-reserva btn-reservation" data-toggle="modal" data-target="#reservationModal"
                         type="submit">Reservar</button> </div>
             </div>
 
@@ -210,7 +210,7 @@
                     <span class="badge badge-primary">Temporada alta</span>
                     <span class="badge badge-secondary">Temporada baja </span>
                 </div>
-                <div> <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservationModal"
+                <div> <button class="btn btn-primary btn-reserva btn-reservation" data-toggle="modal" data-target="#reservationModal"
                         type="submit">Reservar</button> </div>
             </div>
 
@@ -223,7 +223,7 @@
                     <span class="badge badge-primary">Temporada alta</span>
                     <span class="badge badge-secondary">Temporada baja </span>
                 </div>
-                <div> <button class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservationModal"
+                <div> <button class="btn btn-primary btn-reserva btn-reservation" data-toggle="modal" data-target="#reservationModal"
                         type="submit">Reservar</button> </div>
             </div>
 
@@ -318,6 +318,32 @@
              $('.carousel').carousel({
                 interval: 5000
             });
+
+
+            $('#reservationModal').on('show.bs.modal', function (e) {
+                console.log('Ha decidido reservar una habitación...');
+
+                $('.btn-reservation').removeClass('btn btn-primary')
+                    .addClass('btn btn-success disabled');
+                 console.log('INFO ' + e.target.TEXT_NODE )
+            });
+
+            $('#reservationModal').on('shown.bs.modal', function (e) {
+                console.log('Ha cargado el dialogo para asignar una habitación...')
+            });
+
+            $('#reservationModal').on('hide.bs.modal', function (e) {
+                console.log('El dialogo se ha cerrado...');
+
+                $('.btn-reservation').addClass('btn btn-primary')
+                    .removeClass('btn-success disabled');
+                    console.log('INFO ' + e)
+            });
+
+            $('#reservationModal').on('hidden.bs.modal', function (e) {
+                console.log('Se completo el cierre de la reesrva...')
+            });
+
         });
     </script>
 </body>
