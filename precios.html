@@ -44,7 +44,7 @@
                 </ol>
             </nav>
 
-
+            <!-- Lista de pestañas -->
             <ul id="myTab" class="nav nav-tabs mb-2" role="tablist">
                 <li class="nav-item" role="presentation">
                     <a id="compare-tab" class="nav-link active" href="#compare" data-toggle="tab" role="tab"
@@ -58,9 +58,11 @@
                     <a id="comment-tab" class="nav-link" href="#comment" data-toggle="tab" role="tab"
                         aria-controls="comment" aria-selected="false">Comentarios</a>
                 </li>
-            </ul>
+            </ul> <!-- Fin lista de pestañas -->
 
+            <!-- Contenido de las pestañas -->
             <div id="myTabContent" class="tab-content">
+                <!-- Area de la tabla -->
                 <div class="tab-pane fade show active" id="compare" role="tabpanel" aria-labelledby="compare-tab">
                     <div class="table-responsive">
                         <table class="table table-striped">
@@ -128,9 +130,89 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </div> <!-- Fin area de la tabla -->
 
+                <!-- Area de tarjetas -->
                 <div class="tab-pane fade" id="card" role="tabpanel" aria-labelledby="card-tab">
+
+                    <!-- Area de tarjetas con collapse -->
+                    <div class="d-flex mb-3">
+                        <div class="accordion w-100" id="accordionPayment">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseBasic" aria-expanded="true"
+                                            aria-controls="collapseBasic">
+                                            Tarjeta Básica
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseBasic" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionPayment">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, ut illum reiciendis
+                                        nam quisquam eius doloremque dignissimos, eum ea quas sunt dolore facere ipsam. 
+                                        Quasi reiciendis provident in fugiat ipsam! Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Laborum, accusantium aliquid vero libero doloremque debitis facilis 
+                                        ab beatae ratione? Accusantium excepturi ullam neque omnis reiciendis tenetur ipsum 
+                                        officiis rerum explicabo!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseVip" aria-expanded="false"
+                                            aria-controls="collapseVip">
+                                            Tarjeta VIP
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseVip" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionPayment">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat officia 
+                                        autem consectetur ducimus, sequi enim soluta veniam adipisci earum eius rerum
+                                        recusandae provident magni natus expedita debitis nostrum cum. Lorem ipsum 
+                                        dolor sit amet consectetur adipisicing elit. Repudiandae illum consequatur quis
+                                        perspiciatis, fugit itaque cupiditate rerum doloremque dolor id velit aliquam,
+                                        ad culpa corrupti aliquid molestiae magnam reprehenderit. Dicta.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false"
+                                            aria-controls="collapseBlack">
+                                            Tarjeta Black
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseBlack" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionPayment">
+                                    <div class="card-body">
+                                        Lorem Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Fin area de tarjetas con collapse -->
+
+
+
+                    <!-- Area de tarjetas en lista -->
                     <div class="d-flex justify-content-center">
                         <div class="card">
                             <div class="card-header font-weight-bold" style="background-color: rgb(75, 116, 250);">
@@ -138,23 +220,61 @@
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
+                                    <li class="list-group-item">Tarjeta Básica</li>
+                                    <li class="list-group-item">Tarjeta VIP</li>
+                                    <li class="list-group-item">Tarjeta Black</li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> <!-- Fin area de tarjetas en lista -->
 
+                </div> <!-- Fin area de tarjetas -->
+
+                <!-- Area de comentarios -->
                 <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
-                    Comentarios
-                </div>
+                    <form action="post">
+                        <div class="form-group">
+                            <label for="comment">Comentario</label>
+                            <textarea required maxlength="5000" name="comment" id="comment" class="form-control"
+                                placeholder="Puede ingresar un comentario de hasta 5000 caracteres"
+                                rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
 
-            </div>
+                    <hr>
 
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small>Donec id elit non mi porta.</small>
+                        </div>
+                        <div class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small class="text-muted">7 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </div>
+                        <div class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small class="text-muted">10 days ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </div>
+                    </div>
+                </div> <!-- Fin area de comentarios -->
+            </div> <!-- Fin contenido de pestañas -->
 
 
 

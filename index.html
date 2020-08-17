@@ -34,6 +34,7 @@
     </div>
 
     <div class="container">
+        <!-- Navegacion  -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -43,20 +44,46 @@
         <div class="d-flex justify-content-center mt-2 mb-5">
             <img src="images/hotel.jpg" class="rounded-left img-fluid w-100" alt="Responsive image">
         </div>
+
+
+        <!-- Contenido -->
         <div class="row">
-            <div class="col-4">
+            <div class="col-sm-4 mb-1">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#works"
+                    aria-expanded="false" aria-controls="multiCollapse1">
+                    ¿Cómo funciona?
+                </button>
+            </div>
+
+            <div class="col-sm-4 mb-1">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reservation"
+                    aria-expanded="false" aria-controls="multiCollapse2">
+                    ¿Dónde puedo reservar?
+                </button>
+            </div>
+
+            <div class="col-sm-4 mb-1">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#payment"
+                    aria-expanded="false" aria-controls="multiCollapse3">
+                    ¿Cómo pago?
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 collapse multi-collapse" id="works">
                 <h3>¿Cómo funciona?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic molestias 
                 odio modi praesentium veritatis.</p>
             </div>
 
-            <div class="col-sm-4">
-                <h3>Dónde puedo reservar?</h3>
+            <div class="col-sm-4 collapse multi-collapse" id="reservation">
+                <h3>¿Dónde puedo reservar?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. similique quisquam explicabo 
                 ad temporibus vitae sunt commodi alias consequuntur at enim quo, impedit quis.</p>
             </div>
             
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="payment">
                 <h3>¿Cómo pago?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
