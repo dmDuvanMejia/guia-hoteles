@@ -12,7 +12,7 @@ $aliceblue: aliceblue;
 .jumbotron {
     background-color: $blue;
     color: $black;
-    @include margenes(50px, 0);
+    @include margenes(50px, 10px);
 }
 
 footer {
